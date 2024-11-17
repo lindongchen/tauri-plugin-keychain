@@ -1,2 +1,1 @@
-# tauri-plugin-keychain
-Tauri keychain plugin
+# Tauri keychain plugin
