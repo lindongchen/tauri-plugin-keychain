@@ -29,7 +29,8 @@ class KeychainPlugin: Plugin {
 		let status = SecItemCopyMatching(query, &data)
 		
 		guard status == errSecSuccess, let resultData = data as? Data else {
-				return nil
+			invoke.resolve(KeychainResponse(password: nil))
+			return
 		}
 		
 		let password = String(data: resultData, encoding: .utf8)
@@ -42,7 +43,10 @@ class KeychainPlugin: Plugin {
 	  let args = try invoke.parseArgs(KeychainArgs.self)
 		let key = args.key
 		let value = args.password ?? ""
-		guard let data = value.data(using: .utf8) else { return false }
+		guard let data = value.data(using: .utf8) else { 
+			invoke.resolve(false)
+			return 
+		}
 		        
 		let query = [
 				kSecClass: kSecClassGenericPassword,

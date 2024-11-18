@@ -2,9 +2,9 @@
 
 Default permissions for the plugin
 
-- `allow-share-file`
-- `allow-get-shared-files`
-- `allow-get-shared-files-path`
+- `allow-get-item`
+- `allow-save-item`
+- `allow-remove-item`
 
 ## Permission Table
 
@@ -18,12 +18,12 @@ Default permissions for the plugin
 <tr>
 <td>
 
-`share:allow-get-shared-files`
+`keychain:allow-get-item`
 
 </td>
 <td>
 
-Enables the get_shared_files command without any pre-configured scope.
+Enables the get_item command without any pre-configured scope.
 
 </td>
 </tr>
@@ -31,12 +31,12 @@ Enables the get_shared_files command without any pre-configured scope.
 <tr>
 <td>
 
-`share:deny-get-shared-files`
+`keychain:deny-get-item`
 
 </td>
 <td>
 
-Denies the get_shared_files command without any pre-configured scope.
+Denies the get_item command without any pre-configured scope.
 
 </td>
 </tr>
@@ -44,12 +44,12 @@ Denies the get_shared_files command without any pre-configured scope.
 <tr>
 <td>
 
-`share:allow-get-shared-files-path`
+`keychain:allow-remove-item`
 
 </td>
 <td>
 
-Enables the get_shared_files_path command without any pre-configured scope.
+Enables the remove_item command without any pre-configured scope.
 
 </td>
 </tr>
@@ -57,12 +57,12 @@ Enables the get_shared_files_path command without any pre-configured scope.
 <tr>
 <td>
 
-`share:deny-get-shared-files-path`
+`keychain:deny-remove-item`
 
 </td>
 <td>
 
-Denies the get_shared_files_path command without any pre-configured scope.
+Denies the remove_item command without any pre-configured scope.
 
 </td>
 </tr>
@@ -70,12 +70,12 @@ Denies the get_shared_files_path command without any pre-configured scope.
 <tr>
 <td>
 
-`share:allow-share-file`
+`keychain:allow-save-item`
 
 </td>
 <td>
 
-Enables the share_file command without any pre-configured scope.
+Enables the save_item command without any pre-configured scope.
 
 </td>
 </tr>
@@ -83,13 +83,14 @@ Enables the share_file command without any pre-configured scope.
 <tr>
 <td>
 
-`share:deny-share-file`
+`keychain:deny-save-item`
 
 </td>
 <td>
 
-Denies the share_file command without any pre-configured scope.
+Denies the save_item command without any pre-configured scope.
 
 </td>
 </tr>
+
 </table>

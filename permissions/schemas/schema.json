@@ -295,34 +295,34 @@
       "type": "string",
       "oneOf": [
         {
-          "description": "Enables the keychain get item command without any pre-configured scope.",
+          "description": "Enables the get_item command without any pre-configured scope.",
           "type": "string",
           "const": "allow-get-item"
         },
         {
-          "description": "Denies the keychain get item command without any pre-configured scope.",
+          "description": "Denies the get_item command without any pre-configured scope.",
           "type": "string",
           "const": "deny-get-item"
         },
         {
-          "description": "Enables the keychain save item command without any pre-configured scope.",
-          "type": "string",
-          "const": "allow-save-item"
-        },
-        {
-          "description": "Denies the keychain save item command without any pre-configured scope.",
-          "type": "string",
-          "const": "deny-save-item"
-        },
-        {
-          "description": "Enables the keychain remove item command without any pre-configured scope.",
+          "description": "Enables the remove_item command without any pre-configured scope.",
           "type": "string",
           "const": "allow-remove-item"
         },
         {
-          "description": "Denies the keychain remove item command without any pre-configured scope.",
+          "description": "Denies the remove_item command without any pre-configured scope.",
           "type": "string",
           "const": "deny-remove-item"
+        },
+        {
+          "description": "Enables the save_item command without any pre-configured scope.",
+          "type": "string",
+          "const": "allow-save-item"
+        },
+        {
+          "description": "Denies the save_item command without any pre-configured scope.",
+          "type": "string",
+          "const": "deny-save-item"
         },
         {
           "description": "Default permissions for the plugin",
