@@ -92,5 +92,4 @@ Denies the save_item command without any pre-configured scope.
 
 </td>
 </tr>
-
 </table>
