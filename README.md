@@ -2,7 +2,7 @@
 
 This plugin is used to hold keys or password, and even after uninstalling and reinstalling your app, they still exist
 - ios: impl of Keychain services and your need xcode add Signing & Capabilities - Keychain Sharing
-- android: impl of AccountManager (Upcoming Publish)
+- android: impl of AccountManager
 
 ## get keychain
 ```typescript
