@@ -1,6 +1,6 @@
 [package]
 name = "tauri-plugin-keychain"
-version = "2.0.1"
+version = "2.0.2"
 authors = [ "lindongchen","zhangcheng" ]
 description = "A Tauri keychain plugin"
 edition = "2021"
